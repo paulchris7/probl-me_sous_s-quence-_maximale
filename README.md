@@ -25,9 +25,12 @@ L'implémentation est réalisée en **C++** et comprend :
 ```
  📁 projet-sous-sequences-maximales
  ├── 📁 header
- │   ├── implementations.h  # Fichier d'en-tête
+ │   ├── implementations.h  -> Contient les fonctions nécessaires.
+ |   ├── implementations_matrices.h -> Contient les fonctions nécessaires pour les matrices 2D.
  ├── 📁 src
  │   ├── 🖥️implementations.cpp  -> Contient l'implémentation des algorithmes.
+ │   ├── implementations_matrices.cpp -> Contient l'implémentation des algorithmes adaptées aux matrices 2D.
+ ├── 📁 visualization -> Contient les visuels générés par le script python
  ├── 🔬main.cpp  > Gère les tests et la mesure des performances.
  ├── 📊 results.csv  -> Contient les résultats des tests de performances.
  ├── 📈 visualization.py  -> Script Python pour l'analyse des performances.
@@ -41,7 +44,7 @@ L'implémentation est réalisée en **C++** et comprend :
 
 ### 🔨 Compilation
 ```sh
-g++ -o main main.cpp src/implementations.cpp -I headers/ -std=c++11
+g++ -o main main.cpp src/implementations.cpp src/implementations_matrices.cpp -I header/ -std=c++11
 ```
 
 ### ▶️ Exécution
