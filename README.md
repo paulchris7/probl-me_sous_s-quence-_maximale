@@ -23,13 +23,15 @@ L'implémentation est réalisée en **C++** et comprend :
 
 ## 📂 Fichiers du projet
 ```
-📁 /projet-sous-sequences-maximales
- ├── 📝 README.md  -> Ce fichier
- ├── 🖥️ implementations.cpp  -> Contient l'implémentation des algorithmes.
- ├── 🔬 main.cpp  -> Gère les tests et la mesure des performances.
- ├── 🎲 data_generator.cpp  -> Génère des données de test aléatoires.
+ 📁 projet-sous-sequences-maximales
+ ├── 📁 header
+ │   ├── implementations.h  # Fichier d'en-tête
+ ├── 📁 src
+ │   ├── 🖥️implementations.cpp  -> Contient l'implémentation des algorithmes.
+ ├── 🔬main.cpp  > Gère les tests et la mesure des performances.
  ├── 📊 results.csv  -> Contient les résultats des tests de performances.
  ├── 📈 visualization.py  -> Script Python pour l'analyse des performances.
+ ├── 📝 README.md  -> Ce fichier
 ```
 
 ## 🚀 Installation et Exécution
@@ -39,7 +41,7 @@ L'implémentation est réalisée en **C++** et comprend :
 
 ### 🔨 Compilation
 ```sh
-g++ -o main main.cpp implementations.cpp -std=c++11
+g++ -o main main.cpp src/implementations.cpp -I headers/ -std=c++11
 ```
 
 ### ▶️ Exécution
