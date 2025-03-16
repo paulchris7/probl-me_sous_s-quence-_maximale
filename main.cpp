@@ -4,11 +4,9 @@
 #include <fstream>
 #include <iomanip>
 #include "headers/implementations.h"
-#include "header/implementations_matrices.h"
+#include "headers/implementations_matrices.h"
 
 using namespace std;
-using namespace std::chrono;
-
 
 int main() {    
     // Création du fichier csv pour collecter les resultats
@@ -53,8 +51,7 @@ int main() {
     
     fichier_resultat.close();
     cout << "Mesures de performance terminées. Résultats sauvegardés dans 'resultats_performance.csv'" << endl;
-
-
+    
 
     // Exemple d'utilisation avec une petite matrice
     vector<vector<int>> matrix = {

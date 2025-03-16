@@ -3,9 +3,11 @@
 
 #include <vector>
 
-// Déclaration des fonctions pour les matrices
-int sousMatriceMaximaleNaive(const std::vector<std::vector<int>>& matrix);
-int sousMatriceMaximaleMoinsNaive(const std::vector<std::vector<int>>& matrix);
-int sousMatriceMaximaleKadane(const std::vector<std::vector<int>>& matrix);
+using namespace std;
+
+int kadane(const vector<int>& array);
+int sousMatiiceMaximale(const vector<vector<int>>& matrix);
+int sousMatriceMaximaleNaive(const vector<vector<int>>& matrix);
+int sousMatriceMaximaleMoinsNaive(const vector<vector<int>>& matrix);
 
 #endif // IMPLEMENTATIONS_MATRICES_H

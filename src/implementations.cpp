@@ -3,12 +3,12 @@
 #include <algorithm>
 #include <chrono>
 #include <random>
+#include <fstream>
 #include <iomanip>
 #include "../headers/implementations.h"
 
 using namespace std;
 using namespace std::chrono;
-
 
 // Algorithme naïf - O(n³)
 int algorithmeNaif(const vector<int>& T) {
@@ -28,7 +28,6 @@ int algorithmeNaif(const vector<int>& T) {
     return max_somme;
 }
 
-
 // Algorithme moins naïf - O(n²)
 int algorithmeMoinsNaif(const vector<int>& T) {
     int n = T.size();
@@ -44,7 +43,6 @@ int algorithmeMoinsNaif(const vector<int>& T) {
     
     return max_somme;
 }
-
 
 // Algorithme diviser pour régner - O(n log n)
 
@@ -94,7 +92,6 @@ int algorithmeDiviserPourRegner(const vector<int>& T) {
     return diviserPourRegner(T, 0, T.size() - 1);
 }
 
-
 // Algorithme incrémental - O(n)
 int algorithmeIncremental(const vector<int>& T) {
     int n = T.size();
@@ -108,7 +105,6 @@ int algorithmeIncremental(const vector<int>& T) {
     
     return max_global;
 }
-
 
 // Génération de données aléatoires
 vector<int> genererDonneesAleatoires(int n, int min_val, int max_val) {
@@ -124,7 +120,6 @@ vector<int> genererDonneesAleatoires(int n, int min_val, int max_val) {
     return T;
 }
 
-
 // Fonction pour mesurer le temps d'exécution
 template <typename Func>
 double mesurerTemps(Func&& func, const vector<int>& T) {
@@ -134,7 +129,6 @@ double mesurerTemps(Func&& func, const vector<int>& T) {
     duration<double, milli> elapsed = end - start;
     return elapsed.count();
 }
-
 
 // Validation des résultats des algorithmes
 bool verifierResultats(const vector<int>& T) {
