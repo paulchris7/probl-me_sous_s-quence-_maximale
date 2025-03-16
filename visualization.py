@@ -35,7 +35,7 @@ plt.xlabel('Taille du tableau (n)', fontsize=12)
 plt.ylabel('Temps d\'exécution (ms)', fontsize=12)
 plt.legend()
 plt.grid(True, linestyle='--', alpha=0.7)
-plt.savefig('comparaison_lineaire.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization/comparaison_lineaire.png', dpi=300, bbox_inches='tight')
 
 # 2. Graphique logarithmique pour mieux visualiser les différences
 plt.figure(figsize=(10, 6))
@@ -49,7 +49,7 @@ plt.xlabel('Taille du tableau (n)', fontsize=12)
 plt.ylabel('Temps d\'exécution (ms)', fontsize=12)
 plt.legend()
 plt.grid(True, linestyle='--', alpha=0.7)
-plt.savefig('comparaison_log.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization/comparaison_log.png', dpi=300, bbox_inches='tight')
 
 # 3. Graphique des ratios de croissance pour confirmer les complexités
 # Calcul des ratios lorsque n double
@@ -124,7 +124,7 @@ plt.title('Ratios de croissance lorsque la taille n double', fontsize=15)
 plt.xticks(positions, ratios_df['Paire'])
 plt.legend(loc='upper left')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
-plt.savefig('ratios_croissance.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization/ratios_croissance.png', dpi=300, bbox_inches='tight')
 
 # 4. Visualisation du problème de sous-séquence maximale
 # Exemple de tableau avec sous-séquence maximale
@@ -148,7 +148,7 @@ plt.annotate('Sous-séquence maximale\nsomme = 6', xy=(5, 2), xytext=(5, 3.5),
              arrowprops=dict(facecolor='black', shrink=0.05, width=1.5, headwidth=8),
              ha='center', fontsize=10)
 
-plt.savefig('illustration_probleme.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization/illustration_probleme.png', dpi=300, bbox_inches='tight')
 
 # 5. Visualisation de l'algorithme de Kadane
 # Exemple montrant l'évolution de max_courant et max_global
@@ -181,7 +181,7 @@ ax3.set_ylabel('Valeur')
 ax3.grid(True, linestyle='--', alpha=0.7)
 
 plt.tight_layout()
-plt.savefig('illustration_kadane.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization/illustration_kadane.png', dpi=300, bbox_inches='tight')
 
 # 6. Visualisation de l'approche diviser pour régner
 plt.figure(figsize=(12, 8))
@@ -285,6 +285,6 @@ plt.annotate('Sous-matrice maximale\nsomme = 13', xy=(1.5, 1.5), xytext=(3, 0),
              arrowprops=dict(facecolor='black', shrink=0.05, width=1.5, headwidth=8),
              ha='center', fontsize=10)
 
-plt.savefig('illustration_matrices.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization/illustration_matrices.png', dpi=300, bbox_inches='tight')
 
 print("Tous les graphiques ont été générés avec succès!")
