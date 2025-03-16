@@ -245,7 +245,7 @@ plt.arrow(7.5, 1, 0, -0.5, head_width=0.1, head_length=0.1, fc='black', ec='blac
 plt.text(4, 0.2, "La solution finale est le maximum entre:\n1. La solution de la moitié gauche\n2. La solution de la moitié droite\n3. La solution traversant le milieu", 
          ha='center', va='bottom', bbox=dict(facecolor='white', alpha=0.7, boxstyle='round,pad=0.5'))
 
-plt.savefig('illustration_diviser_pour_regner.png', dpi=300, bbox_inches='tight')
+plt.savefig('visualization\illustration_diviser_pour_regner.png', dpi=300, bbox_inches='tight')
 
 # 7. Visualisation du problème pour les matrices
 
