@@ -8,7 +8,7 @@
 #include "../headers/implementations.h"
 
 using namespace std;
-using namespace std::chrono;
+
 
 // Algorithme naïf - O(n³)
 int algorithmeNaif(const vector<int>& T) {
@@ -118,16 +118,6 @@ vector<int> genererDonneesAleatoires(int n, int min_val, int max_val) {
     }
     
     return T;
-}
-
-// Fonction pour mesurer le temps d'exécution
-template <typename Func>
-double mesurerTemps(Func&& func, const vector<int>& T) {
-    auto start = high_resolution_clock::now();
-    int resultat = func(T);
-    auto end = high_resolution_clock::now();
-    duration<double, milli> elapsed = end - start;
-    return elapsed.count();
 }
 
 // Validation des résultats des algorithmes
