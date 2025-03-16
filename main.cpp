@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iomanip>
 #include "headers/implementations.h"
+#include "header/implementations_matrices.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -52,6 +53,20 @@ int main() {
     
     fichier_resultat.close();
     cout << "Mesures de performance terminées. Résultats sauvegardés dans 'resultats_performance.csv'" << endl;
+
+
+
+    // Exemple d'utilisation avec une petite matrice
+    vector<vector<int>> matrix = {
+        {1, -2, -1, 4},
+        {-8, 3, 8, -2},
+        {2, -4, 6, 1},
+        {-1, 1, -7, 3}
+    };
+    
+    cout << "Sous-matrice maximale (Incrementale): " << sousMatiiceMaximale(matrix) << endl;
+    cout << "Sous-matrice maximale (Naive): " << sousMatriceMaximaleNaive(matrix) << endl;
+    cout << "Sous-matrice maximale (Moins Naive): " << sousMatriceMaximaleMoinsNaive(matrix) << endl;
     
     return 0;
 }
