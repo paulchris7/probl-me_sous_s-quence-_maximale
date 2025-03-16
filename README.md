@@ -75,8 +75,6 @@ Les tests sont effectués sur des entrées de tailles croissantes et les temps d
 ## 👤 Auteur
 👨‍💻 **Paul Christopher AIMÉ**
 
-## 🎓 Encadrant
-📚 **Pr. BEKKARI**
 
 ## 📜 Licence
 📝 **Ce projet est sous licence MIT**. Vous êtes libre de l'utiliser, le modifier et le distribuer selon les termes de cette licence.
